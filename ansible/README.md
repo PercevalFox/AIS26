@@ -1,7 +1,7 @@
 # Ansible
 
 
-**But** : depuis la machine A (control node) lancer une seule commande pour faire `apt update && apt upgrade && apt autoremove` sur Machine A et B.
+**But** : depuis la machine A (control node) lancer une seule commande pour faire `apt update && apt upgrade -y && apt autoremove -y` sur Machine A et B.
 
 ## Contenu
 - `inventory.ini` : inventaire Ansible (remplace `USER_REPLACE` par ton utilisateur, ex: `ubuntu` ou ``saucisse``)
