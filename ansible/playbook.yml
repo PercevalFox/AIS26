@@ -1,0 +1,16 @@
+---
+- name: Mise à jour des machines A et B
+  hosts: all
+  become: yes
+  tasks:
+    - name: Mettre à jour le cache apt
+      apt:
+        update_cache: yes
+
+    - name: Upgrade dist (paquets)
+      apt:
+        upgrade: dist
+
+    - name: Autoremove paquets inutiles
+      apt:
+        autoremove: yes
